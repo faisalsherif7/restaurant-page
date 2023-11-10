@@ -50,10 +50,16 @@ table {
 .header {
     height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
     background-color: beige;
+    padding: 0px 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
 }
 
 .content {
