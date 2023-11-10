@@ -1,1 +1,3 @@
-console.log('hello world');
+import { pageLoad } from "./modules";
+
+pageLoad();
