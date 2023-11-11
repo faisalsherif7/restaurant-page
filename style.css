@@ -85,6 +85,7 @@ table {
 }
 
 .content {
+    background-color: black;
     background-size: cover;
     min-height: 100vh;
     width: auto;
