@@ -12,8 +12,8 @@ const pageLoad =  function() {
     home.className = 'home-nav';
     header.appendChild(home);
 
-    const menu = document.createElement('p');
-    menu.innerHTML = '<button>Menu</button>';
+    const menu = document.createElement('button');
+    menu.innerHTML = 'Menu';
     menu.classList.add('menu-nav');
     header.appendChild(menu);
 
@@ -43,6 +43,12 @@ function home() {
 
 function menu() {
     const divContent = document.querySelector('.content');
+    divContent.className = 'content menu-background';
+    divContent.textContent = '';
+
+    divContent.innerHTML = `
+    
+    `
 }
 
 function contact() {
