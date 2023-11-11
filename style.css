@@ -98,6 +98,10 @@ table {
 .contact-background {
     background-image: url(contact.jpg);
 }
+
+.menu-background {
+    background-image: url(menu.jpg);
+}
  
 .text {
     background-color: rgb(0, 0, 0, 0.65);
