@@ -33,7 +33,7 @@ function home() {
     divContent.textContent = '';
 
     const text = document.createElement('div');
-    text.classList.add('text');
+    text.className = 'text homepage-text';
     divContent.appendChild(text);
 
     const p = document.createElement('p');
@@ -48,6 +48,43 @@ function menu() {
 function contact() {
     const divContent = document.querySelector('.content');
     divContent.className = 'content contact-background';
+    divContent.textContent = '';
+    
+    const contactText = document.createElement('div');
+    contactText.className = 'text contact-text';
+    divContent.appendChild(contactText);
+
+    const contactHeader = document.createElement('h1');
+    contactHeader.className = 'contact-header';
+    contactHeader.textContent = 'Contact Us';
+    contactText.appendChild(contactHeader);
+
+    const contactContent = document.createElement('div');
+    contactContent.innerHTML = `
+    <div class="contact-div address">
+        <h1 class="contact-bold">Address</h1>
+        <p>123 Main Street, Cityville, Country</p>
+    </div>
+
+    <div class="contact-div phone">
+        <h1 class="contact-bold">Phone</h1>
+        <p>(+123) 456-7890</p>
+    </div>
+
+    <div class="contact-div email">
+        <h1 class="contact-bold">Email</h1>
+        <p>info@medinabites.com</p>
+    </div>
+
+    <div class="contact-div opening-hours">
+        <h1 class="contact-bold">Opening Hours</h1>
+        <p>Monday to Saturday: 10:00 AM - 10:00 PM</p>
+        <p>Sunday: 12:00 PM - 8:00 PM</p>
+    </div>
+    `;
+
+    contactText.appendChild(contactContent);
+
 }
 
 export { pageLoad, menu, contact, home }
