@@ -1,7 +1,7 @@
 import { pageLoad, menu, contact, home } from "./modules";
 
 pageLoad();
-contact();
+menu();
 
 const header = document.querySelector('.header');
 const homeNav = document.querySelector('.home-nav');
