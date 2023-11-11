@@ -1,14 +1,21 @@
-import { pageLoad, menu, contact } from "./modules";
+import { pageLoad, menu, contact, home } from "./modules";
 
 pageLoad();
+home();
 
+const header = document.querySelector('.header');
+const homeNav = document.querySelector('.home-nav');
 const menuNav = document.querySelector('.menu-nav');
 const contactNav = document.querySelector('.contact-nav');
 
-menuNav.addEventListener('click', () => {
-    menu();
+header.addEventListener('click', (event) => {
+    if (event.target === homeNav) {
+        home();
+    } else if (event.target === menuNav) {
+        menu();
+    } else if (event.target === contactNav) {
+        contact();
+    }
 })
 
-contactNav.addEventListener('click', () => {
-    contact();
-})
+
