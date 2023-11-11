@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 :root {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -110,15 +111,17 @@ table {
 }
 
 .homepage-text {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    padding: 50px;
     font-size: 1.9rem;
     gap: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .text p {
-    max-width: 60ch;
+    max-width: 50ch;
 }
 
 .contact-text {

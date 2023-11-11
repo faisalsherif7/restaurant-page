@@ -36,8 +36,7 @@ function home() {
     text.className = 'text homepage-text';
     divContent.appendChild(text);
 
-    const p = document.createElement('p');
-    p.innerHTML = `
+    text.innerHTML = `
     <p>Welcome to Medina Bites, an exquisite haven in the heart of Cityville where Middle Eastern flavors come alive on your plate. Immerse yourself in the tantalizing fusion of traditional recipes and contemporary tastes that define our culinary journey. From the savory delight of our Shawarma Platter to the sweet perfection of our Baklava Delight, each dish at Medina Bites is crafted to bring the authentic spirit of the Middle East to your table.</p>
 
     <p>Indulge in our famed Hummus Platter, a creamy blend of chickpeas, tahini, and garlic served with warm pita bread, or savor the crispiness of our Falafel Wrap, a handheld treat bursting with falafel goodness. Explore the refreshing notes of our Moroccan Couscous Salad or dive into the heartiness of the Chicken Shawarma Bowl—a perfect marriage of marinated chicken, seasoned rice, and grilled vegetables.</p>
@@ -46,7 +45,6 @@ function home() {
     
     <p>At Medina Bites, we invite you to experience the allure of Arabic cuisine in every bite, where each dish is a celebration of warmth, tradition, and culinary excellence. Join us, and let the warmth of our hospitality elevate your Middle Eastern dining adventure.</p>
     `
-    text.appendChild(p);
 }
 
 function menu() {
