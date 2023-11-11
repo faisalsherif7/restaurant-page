@@ -16,10 +16,12 @@ function pageLoad() {
 
     const menu = document.createElement('p');
     menu.innerHTML = 'Menu';
+    menu.classList.add('menu-nav');
     tabs.appendChild(menu);
 
     const contact = document.createElement('p');
     contact.textContent = 'Contact';
+    contact.classList.add('contact-nav');
     tabs.appendChild(contact);
 
     const divContent = document.createElement('div');
@@ -38,7 +40,11 @@ function pageLoad() {
 }
 
 function menu() {
-    content.textContent = ''
+    content.textContent = 'THIS IS THE MENU'
 }
 
-export { pageLoad }
+function contact() {
+    content.textContent = 'contacts !'
+}
+
+export { pageLoad, menu, contact }
