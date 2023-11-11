@@ -106,24 +106,23 @@ table {
 .text {
     background-color: rgb(0, 0, 0, 0.65);
     width: 100vw;
+    color: white;
 }
 
 .homepage-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     font-size: 1.9rem;
+    gap: 40px;
 }
 
 .text p {
     max-width: 60ch;
-    text-align: center;
 }
 
 .contact-text {
     padding: 70px;
-    color: white;
 }
 
 .contact-header {
@@ -141,7 +140,6 @@ table {
 }
 
 .contact-div p {
-    text-align: left;
     font-size: 1.3rem;
 }
 
@@ -154,3 +152,26 @@ table {
     margin-bottom: 10px;
 }
 
+.menu-text {
+    font-size: 1.4rem;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 150px;
+    gap: 60px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 40px 100px;
+    grid-template-columns: 3fr 1fr;
+}
+
+.description {
+    grid-column: 1 / -1;
+    line-height: 1.2;
+}
+
+.price {
+    text-align: right;
+}
