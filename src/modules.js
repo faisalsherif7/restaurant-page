@@ -73,7 +73,7 @@ function contact() {
 
     <div class="contact-div email">
         <h1 class="contact-bold">Email</h1>
-        <p>info@medinabites.com</p>
+        <p><a href="">info@medinabites.com</a></p>
     </div>
 
     <div class="contact-div opening-hours">
