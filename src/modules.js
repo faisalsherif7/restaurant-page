@@ -6,23 +6,19 @@ const pageLoad =  function() {
     header.classList.add('header');
     content.appendChild(header);
     
-    const heading = document.createElement('h1');
-    heading.textContent = 'MEDINA BITES';
+    const heading = document.createElement('p');
+    heading.innerHTML = '<button>Home</button>';
     header.appendChild(heading);
 
-    const tabs = document.createElement('div');
-    tabs.classList.add('tabs');
-    header.appendChild(tabs);
-
     const menu = document.createElement('p');
-    menu.innerHTML = 'Menu';
+    menu.innerHTML = '<button>Menu</button>';
     menu.classList.add('menu-nav');
-    tabs.appendChild(menu);
+    header.appendChild(menu);
 
     const contact = document.createElement('p');
-    contact.textContent = 'Contact';
+    contact.innerHTML = '<button>Contact</button>';
     contact.classList.add('contact-nav');
-    tabs.appendChild(contact);
+    header.appendChild(contact);
 
     const divContent = document.createElement('div');
     divContent.classList.add('content')
